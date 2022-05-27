@@ -1,4 +1,5 @@
 # gestion-scolarite-ecole
+gestion-scolarite-ecole
 Une école de la place désire automatiser la gestion des notes, des inscriptions et des règlements de la
 scolarité des étudiants.
 Un étudiant s’inscrit plusieurs fois dans différentes filières. Exemple un étudiant s’inscrit une année
