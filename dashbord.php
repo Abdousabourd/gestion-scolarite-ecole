@@ -1,9 +1,7 @@
 <?php
 
+include 'function.php';
 
+echo "Ceci est ma page dashboard";
 
-echo{page dacueil
-    header("location: dashboard.php");
-}
-
-?>
+send_mail("abdousabourdidrisou@gmail.com", "vssbsf");
