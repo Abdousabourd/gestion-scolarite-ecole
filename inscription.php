@@ -1,14 +1,3 @@
-<?php
-
-include 'function.php';
-
-$user_connected = check_if_user_conneted();
-
-if($user_connected){
-    header("location: dashboard.php");
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,7 +25,7 @@ if($user_connected){
 
         <div class="card-header text-center">
 
-            <a href="#" class="h1"><b>Ges</b>Bibliothèque</a>
+            <a href="#" class="h1"><b>Ges</b>-Scolarite-Ecole</a>
 
         </div>
 
@@ -398,36 +387,38 @@ if($user_connected){
                     </span>
 
                 </div>
+                  <!-- Le champs retapez mot de passe -->
+                  <div class="col-sm-12 mb-3">
 
-                <!-- Le champs retapez mot de passe -->
-                <div class="col-sm-12 mb-3">
+<label for="inscription-retapez-mot-passe">
 
-                    <label for="inscription-retapez-mot-passe">
+    Retapez mot de passe:
 
-                        Retapez mot de passe:
+    <span class="text-danger">(*)</span>
 
-                        <span class="text-danger">(*)</span>
+</label>
 
-                    </label>
+<div class="input-group mb-3">
 
-                    <div class="input-group mb-3">
+    <input type="password" name="retapez-mot-passe" id="inscription-retapez-mot-passe"
+           class="form-control" placeholder="Veuillez retaper votre mot de passe"
+           value="<?= (isset($donnees["retapez-mot-passe"]) && !empty($donnees["retapez-mot-passe"])) ? $donnees["retapez-mot-passe"] : ""; ?>"
+           required>
 
-                        <input type="password" name="retapez-mot-passe" id="inscription-retapez-mot-passe"
-                               class="form-control" placeholder="Veuillez retaper votre mot de passe"
-                               value="<?= (isset($donnees["retapez-mot-passe"]) && !empty($donnees["retapez-mot-passe"])) ? $donnees["retapez-mot-passe"] : ""; ?>"
-                               required>
+    <div class="input-group-append">
 
-                        <div class="input-group-append">
+        <div class="input-group-text">
 
-                            <div class="input-group-text">
+            <span class="fas fa-lock"></span>
 
-                                <span class="fas fa-lock"></span>
+        </div>
 
-                            </div>
+    </div>
 
-                        </div>
+</div>
 
-                    </div>
+
+     
 
                     <span class="text-danger">
 
@@ -450,7 +441,7 @@ if($user_connected){
                     <!-- /.col -->
                     <div class="col-6">
 
-                        <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+                        <button type="submit" a href="dashbord.php" class="btn btn-primary btn-block">Inscription </a> </button>
 
                     </div>
                     <!-- /.col -->

@@ -1,14 +1,3 @@
-<?php
-
-include 'function.php';
-
-$user_connected = check_if_user_conneted();
-
-if($user_connected){
-    header("location: dashboard.php");
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,7 +25,7 @@ if($user_connected){
 
         <div class="card-header text-center">
 
-            <a href="#" class="h1"><b>Ges</b>Bibliothèque</a>
+            <a href="#" class="h1"><b>Ges</b>-Scolarite-Ecole</a>
 
         </div>
 
@@ -107,6 +96,12 @@ if($user_connected){
                                placeholder="Veuillez entrer votre address email ou votre nom d'utilisateur"
                                value="<?= (isset($donnees["email-nom-utilisateur"]) && !empty($donnees["email-nom-utilisateur"])) ? $donnees["email-nom-utilisateur"] : ""; ?>"
                                required>
+                               
+
+
+
+
+                               
 
                         <div class="input-group-append">
 
